@@ -5,6 +5,7 @@
             "fieldname": "geolocation",
             "fieldtype": "Section Break",
             "insert_after": "links",
+            "is_system_generated": 1,
             "label": "Location",
             "module": "ERPNext CIS Plus"
         },
@@ -13,6 +14,7 @@
             "fieldname": "location",
             "fieldtype": "Geolocation",
             "insert_after": "geolocation",
+            "is_system_generated": 1,
             "label": "Map",
             "module": "ERPNext CIS Plus"
         },
@@ -22,6 +24,7 @@
             "fieldtype": "Float",
             "hidden": 1,
             "insert_after": "location",
+            "is_system_generated": 1,
             "label": "Latitude",
             "module": "ERPNext CIS Plus",
             "precision": "6"
@@ -32,6 +35,7 @@
             "fieldtype": "Float",
             "hidden": 1,
             "insert_after": "latitude",
+            "is_system_generated": 1,
             "label": "Longitude",
             "module": "ERPNext CIS Plus",
             "precision": "6"

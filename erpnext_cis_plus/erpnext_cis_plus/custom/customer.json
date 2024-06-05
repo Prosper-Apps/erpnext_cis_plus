@@ -8,6 +8,7 @@
             "fieldname": "customer_primary_address_address_line1",
             "fieldtype": "Data",
             "insert_after": "customer_primary_address",
+            "is_system_generated": 1,
             "label": "Address Line 1",
             "module": "ERPNext CIS Plus"
         },
@@ -19,6 +20,7 @@
             "fieldname": "customer_primary_address_address_line2",
             "fieldtype": "Data",
             "insert_after": "customer_primary_address_address_line1",
+            "is_system_generated": 1,
             "label": "Address Line 2",
             "module": "ERPNext CIS Plus"
         },
@@ -30,6 +32,7 @@
             "fieldname": "customer_primary_address_city",
             "fieldtype": "Data",
             "insert_after": "customer_primary_address_address_line2",
+            "is_system_generated": 1,
             "label": "City/Town",
             "module": "ERPNext CIS Plus"
         },
@@ -41,6 +44,7 @@
             "fieldname": "customer_primary_address_state",
             "fieldtype": "Data",
             "insert_after": "customer_primary_address_city",
+            "is_system_generated": 1,
             "label": "State/Province",
             "module": "ERPNext CIS Plus"
         },
@@ -52,6 +56,7 @@
             "fieldname": "customer_primary_address_pincode",
             "fieldtype": "Data",
             "insert_after": "customer_primary_address_state",
+            "is_system_generated": 1,
             "label": "Postal Code",
             "module": "ERPNext CIS Plus"
         },
@@ -63,6 +68,7 @@
             "fieldname": "customer_primary_address_email_id",
             "fieldtype": "Data",
             "insert_after": "customer_primary_address_pincode",
+            "is_system_generated": 1,
             "label": "Email Address",
             "module": "ERPNext CIS Plus",
             "options": "Email"
@@ -75,6 +81,7 @@
             "fieldname": "customer_primary_address_phone",
             "fieldtype": "Data",
             "insert_after": "customer_primary_address_email_id",
+            "is_system_generated": 1,
             "label": "Customer Phone",
             "module": "ERPNext CIS Plus",
             "options": "Phone"
@@ -87,6 +94,7 @@
             "fieldname": "customer_primary_address_fax",
             "fieldtype": "Data",
             "insert_after": "customer_primary_address_phone",
+            "is_system_generated": 1,
             "label": "Customer Fax",
             "module": "ERPNext CIS Plus",
             "options": "Phone"
@@ -99,6 +107,7 @@
             "fieldname": "customer_primary_contact_first_name",
             "fieldtype": "Data",
             "insert_after": "customer_primary_contact",
+            "is_system_generated": 1,
             "label": "First Name",
             "module": "ERPNext CIS Plus"
         },
@@ -110,6 +119,7 @@
             "fieldname": "customer_primary_contact_last_name",
             "fieldtype": "Data",
             "insert_after": "customer_primary_contact_first_name",
+            "is_system_generated": 1,
             "label": "Last Name",
             "module": "ERPNext CIS Plus"
         },
@@ -121,6 +131,7 @@
             "fieldname": "customer_primary_contact_email_id",
             "fieldtype": "Data",
             "insert_after": "customer_primary_contact_last_name",
+            "is_system_generated": 1,
             "label": "Email Address",
             "module": "ERPNext CIS Plus",
             "options": "Email"
@@ -133,6 +144,7 @@
             "fieldname": "customer_primary_contact_phone",
             "fieldtype": "Data",
             "insert_after": "customer_primary_contact_email_id",
+            "is_system_generated": 1,
             "label": "Phone",
             "module": "ERPNext CIS Plus",
             "options": "Phone"
@@ -145,6 +157,7 @@
             "fieldname": "customer_primary_contact_mobile_no",
             "fieldtype": "Data",
             "insert_after": "customer_primary_contact_phone",
+            "is_system_generated": 1,
             "label": "Mobile No",
             "module": "ERPNext CIS Plus",
             "options": "Phone"
@@ -157,6 +170,7 @@
             "fieldname": "customer_primary_contact_department",
             "fieldtype": "Data",
             "insert_after": "customer_primary_contact_mobile_no",
+            "is_system_generated": 1,
             "label": "Department",
             "module": "ERPNext CIS Plus"
         },
@@ -166,6 +180,7 @@
             "fieldname": "geolocation",
             "fieldtype": "Section Break",
             "insert_after": "email_id",
+            "is_system_generated": 1,
             "label": "Location",
             "module": "ERPNext CIS Plus"
         },
@@ -177,6 +192,7 @@
             "fieldtype": "Float",
             "hidden": 1,
             "insert_after": "geolocation",
+            "is_system_generated": 1,
             "label": "Latitude",
             "module": "ERPNext CIS Plus",
             "precision": "6",
@@ -190,6 +206,7 @@
             "fieldtype": "Float",
             "hidden": 1,
             "insert_after": "latitude",
+            "is_system_generated": 1,
             "label": "Longitude",
             "module": "ERPNext CIS Plus",
             "precision": "6",
@@ -202,6 +219,7 @@
             "fieldname": "location",
             "fieldtype": "Geolocation",
             "insert_after": "longitude",
+            "is_system_generated": 1,
             "label": "Map",
             "module": "ERPNext CIS Plus",
             "read_only": 1
@@ -212,15 +230,17 @@
             "doc_type": "Customer",
             "doctype_or_field": "DocField",
             "field_name": "primary_address_and_contact_detail",
+            "is_system_generated": 1,
             "name": "Customer-primary_address_and_contact_detail-description",
-            "property": "description",
             "property_type": "Small Text",
+            "property": "description",
             "value": "Edit the primary address and contact details directly."
         },
         {
             "doc_type": "Customer",
             "doctype_or_field": "DocField",
             "field_name": "primary_address",
+            "is_system_generated": 1,
             "name": "Customer-primary_address-hidden",
             "property": "hidden",
             "property_type": "Check",
@@ -230,6 +250,7 @@
             "doc_type": "Customer",
             "doctype_or_field": "DocField",
             "field_name": "mobile_no",
+            "is_system_generated": 1,
             "name": "Customer-mobile_no-hidden",
             "property": "hidden",
             "property_type": "Check",
@@ -239,6 +260,7 @@
             "doc_type": "Customer",
             "doctype_or_field": "DocField",
             "field_name": "email_id",
+            "is_system_generated": 1,
             "name": "Customer-email_id-hidden",
             "property": "hidden",
             "property_type": "Check",
