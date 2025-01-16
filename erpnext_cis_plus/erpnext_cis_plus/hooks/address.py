@@ -52,7 +52,7 @@ def geolocate_address(doc, method=None):
                 "Geolocation Error", 
                 f"No geolocation found for address: {address_str}"
             )
-            return doc
+            return
 
         result = results[0]
         address = result.get('address', {})
@@ -62,16 +62,16 @@ def geolocate_address(doc, method=None):
         doc.longitude = result.get('lon')
 
         # Map Nominatim address components to Frappe fields
-        if address.get('postcode'):
+        if not doc.pincode and address.get('postcode'):
             doc.pincode = address.get('postcode')
-        if address.get('country'):
+        if not doc.country and address.get('country'):
             doc.country = address.get('country')
-        if address.get('state'):
+        if not doc.state and address.get('state'):
             state_name = address.get('state')
             doc.state = get_state_abbrev(state_name, doc.country)
-        if address.get('county'):
+        if not doc.county and address.get('county'):
             doc.county = address.get('county')
-        if address.get('city') or address.get('town') or address.get('village'):
+        if not doc.city and address.get('city') or address.get('town') or address.get('village'):
             doc.city = address.get('city') or address.get('town') or address.get('village')
 
     except Exception as e:
