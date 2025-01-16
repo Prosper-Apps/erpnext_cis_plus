@@ -66,6 +66,7 @@ async function setup_form_layout(frm) {
         $(column_form).addClass("input-group");
     });
     const layout_fields = {
+        "customer_primary_address": 12,
         "customer_primary_address_address_line1": 6,
         "customer_primary_address_address_line2": 6,
         "customer_primary_address_city": 5,
@@ -74,6 +75,7 @@ async function setup_form_layout(frm) {
         "customer_primary_address_email_id": 6,
         "customer_primary_address_phone": 6,
         "customer_primary_address_fax": 6,
+        "customer_primary_contact": 12,
         "customer_primary_contact_first_name": 6,
         "customer_primary_contact_last_name": 6,
         "customer_primary_contact_email_id": 6,
